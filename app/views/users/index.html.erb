@@ -23,13 +23,12 @@
     <th></th>
   </tr>
 
-<%  @users.each do |u| %>
+<% @users.each do |u| %>
   <tr>
     <td><%=u.id%></td>
     <td><%=u.username%></td>
-    <td><a href=users/<%= u.username %> >Show details</a>
+    <td><a href="users/<%=u.username%>">Show details</a>
     </td>
   </tr>
-
 <% end %>
 </table>
