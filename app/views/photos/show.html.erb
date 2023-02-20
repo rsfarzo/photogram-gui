@@ -26,7 +26,6 @@
     <form action="/update_photo/<%=@photo.id%>">
       <label for="browser_image">Image</label>
       <input id="browser_image" type="text" name="input_image" placeholder="Enter a URL for the image..." value="<%=@photo.image%>">
-
       <label for="browser_caption">Caption</label>
       <textarea id="browser_caption" name="input_caption" placeholder="Enter a caption for the photo..."><%=@photo.caption%></textarea>
 
@@ -59,7 +58,7 @@
 </table>
   <form action="/insert_comment_record">
   <label for="browser_photo_id">Photo ID</label>
-  <input id="browser_photo_id" type="text" value="777" name="input_photo_id">
+  <input id="browser_photo_id" type="text" value="<%=@photo.id%>" name="input_photo_id">
 
   <label for="browser_author_id">Author ID</label>
   <input id="browser_author_id" type="text" name="input_author_id">
